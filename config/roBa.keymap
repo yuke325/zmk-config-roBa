@@ -97,19 +97,19 @@
 
         NUM {
             bindings = <
-&kp CARET           &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                             &kp UNDERSCORE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EXCLAMATION  &kp QUESTION
-&kp DOLLAR          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp LC(LA(KP_NUMBER_0))      &kp AT_SIGN  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON        &kp SLASH
-&mt LSHIFT PERCENT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &kp TILDE                    &kp HASH     &kp SINGLE_QUOTE   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON    &kp PIPE
-&kp AMPERSAND       &kp ASTERISK     &kp KP_NUMBER_0  &trans           &trans     &trans                       &trans       &trans                                                                           &kp BACKSLASH
+&kp GRAVE               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                             &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp AMPERSAND
+&kp TILDE               &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp LC(LA(KP_NUMBER_0))      &kp DOLLAR   &kp AT_SIGN      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON      &kp ASTERISK
+&mt LSHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &kp UNDERSCORE               &kp PERCENT  &kp HASH         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SEMICOLON  &kp PIPE
+&trans                  &trans           &trans           &trans           &trans     &trans                       &trans       &trans                                                                       &kp BACKSLASH
             >;
         };
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                                       &trans          &trans          &trans        &trans           &trans
-&kp HOME        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &msc SCRL_UP    &trans               &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &trans           &trans          &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT      &trans  &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &trans
-&trans          &trans           &trans          &trans           &trans          &trans               &trans  &trans                                                         &trans
+&kp ESCAPE  &kp LC(LS(TAB))  &kp UP_ARROW    &kp LC(TAB)      &trans                                       &trans          &trans          &trans        &trans           &trans
+&kp HOME    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &msc SCRL_UP    &trans               &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp Z       &kp X            &trans          &msc SCRL_LEFT   &msc SCRL_DOWN  &msc SCRL_RIGHT      &trans  &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END          &trans
+&trans      &trans           &trans          &trans           &trans          &trans               &trans  &trans                                                         &trans
             >;
         };
 
