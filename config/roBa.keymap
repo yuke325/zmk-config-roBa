@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // スクロール量
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
@@ -40,17 +41,19 @@
         };
 
         // マウスボタンを押している間は押し続け、離すとレイヤー0に戻るマクロ
+
         mkp_to_0: mkp_to_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = 
+            bindings =
                 <&macro_press>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
-                <&macro_pause_for_release>,             // ここでキーを離すのを待つ
+                <&macro_pause_for_release>,
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&to 0>;                                // 離した後にレイヤー0へ
+                <&to 0>;
+                                // 離した後にレイヤー0へ
             label = "MOUSE_CLICK_TO_0";
         };
     };
@@ -65,13 +68,14 @@
             tapping-term-ms = <200>;
         };
 
-       encoder_msc_down_up: encoder_msc_down_up {
-           compatible = "zmk,behavior-sensor-rotate";
-           label = "ENCODER_MSC_DOWN_UP";
-           #sensor-binding-cells = <0>;
-           bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-           tap-ms = <20>;
-       };
+        encoder_msc_down_up: encoder_msc_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <20>;
+        };
     };
 
     keymap {
@@ -99,7 +103,7 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOL_UP>;
         };
 
-        SYMBOL  {
+        SYMBOL {
             bindings = <
 &kp GRAVE               &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                             &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp CARET      &kp AMPERSAND
 &kp TILDE               &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp LC(LA(KP_NUMBER_0))      &kp DOLLAR   &kp AT_SIGN      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COLON      &kp ASTERISK
@@ -119,10 +123,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &mkp MB4        &mkp MB5                                     &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans          &msc SCRL_UP    &kp LG(LS(S))        &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT      &trans  &trans  &mkp MB4  &mkp MB5  &trans    &trans
-&trans  &trans  &trans  &trans          &trans          &trans               &trans  &trans                                &trans
+&trans  &trans  &trans  &kp C_AC_SCROLL_UP  &kp K_SCROLL_DOWN                             &trans  &trans         &trans    &trans         &trans
+&trans  &trans  &trans  &mkp MB5            &mkp MB4           &kp LG(LS(S))      &trans  &trans  &mkp_to_0 MB1  &mkp MB3  &mkp_to_0 MB2  &trans
+&trans  &trans  &trans  &msc SCRL_LEFT      &msc SCRL_RIGHT    &trans             &trans  &trans  &mkp MB4       &mkp MB5  &trans         &trans
+&trans  &trans  &trans  &trans              &trans             &trans             &trans  &trans                                          &trans
             >;
         };
 
