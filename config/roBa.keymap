@@ -52,7 +52,7 @@
                 <&macro_release>,
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
-                <&to 0>;
+                <&sl 4>;
 
             // 離した後にレイヤー0へ
 
