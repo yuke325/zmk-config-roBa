@@ -88,7 +88,7 @@
 &kp Q      &kp W         &kp E         &kp R                   &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))             &kp TAB                 &kp H        &kp J  &kp K      &kp L    &lt_to_layer_0 5 SINGLE_QUOTE
 &kp Z      &kp X         &kp C         &kp V                   &kp B        &kp ESC                   &lt_to_layer_0 6 MINUS  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANG1  &lt 3 SPACE  &mt LEFT_SHIFT LANG2      &kp BACKSPACE           &lt 2 ENTER                             &kp DEL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANG1  &lt 1 SPACE  &mt LEFT_SHIFT LANG2      &kp BACKSPACE           &lt 2 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
