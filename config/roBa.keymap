@@ -53,7 +53,9 @@
                 <&macro_param_1to1 &mkp MACRO_PLACEHOLDER>,
                 <&macro_tap>,
                 <&to 0>;
-                                // 離した後にレイヤー0へ
+
+            // 離した後にレイヤー0へ
+
             label = "MOUSE_CLICK_TO_0";
         };
     };
@@ -84,7 +86,7 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                   &kp T                                                              &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))             &kp TAB                     &kp H        &kp J  &kp K      &kp L    &kp SQT
+&kp A      &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))             &kp TAB                     &kp H        &kp J  &kp K      &kp L    &lt_to_layer_0 5 SINGLE_QUOTE
 &kp Z      &kp X         &kp C         &kp V                   &kp B        &kp ESC                   &lt_to_layer_0 6 LG(LS(S))  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LANG1  &lt 3 SPACE  &mt LEFT_SHIFT LANG2      &kp BACKSPACE               &lt 2 ENTER                             &kp DEL
             >;
@@ -123,10 +125,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &kp C_AC_SCROLL_UP  &kp K_SCROLL_DOWN                             &trans  &trans         &trans    &trans         &trans
-&trans  &trans  &trans  &mkp MB5            &mkp MB4           &kp LG(LS(S))      &trans  &trans  &mkp_to_0 MB1  &mkp MB3  &mkp_to_0 MB2  &trans
-&trans  &trans  &trans  &msc SCRL_LEFT      &msc SCRL_RIGHT    &trans             &trans  &trans  &mkp MB4       &mkp MB5  &trans         &trans
-&trans  &trans  &trans  &trans              &trans             &trans             &trans  &trans                                          &trans
+&trans  &trans  &trans  &kp C_AC_SCROLL_UP  &kp K_SCROLL_DOWN                             &kp LC(X)       &kp LC(V)      &kp LC(C)  &kp LC(T)      &trans
+&trans  &trans  &trans  &mkp MB5            &mkp MB4           &kp LG(LS(S))      &trans  &mmv MOVE_UP    &mkp_to_0 MB1  &mkp MB3   &mkp_to_0 MB2  &trans
+&trans  &trans  &trans  &msc SCRL_LEFT      &msc SCRL_RIGHT    &trans             &trans  &mmv MOVE_DOWN  &mkp MB4       &mkp MB5   &kp LC(W)      &trans
+&trans  &trans  &trans  &trans              &trans             &trans             &trans  &trans                                                   &trans
             >;
         };
 
