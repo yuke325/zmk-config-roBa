@@ -127,10 +127,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &kp PAGE_UP     &kp PAGE_DOWN                               &kp LG(X)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(T)      &trans
-&trans  &trans  &trans  &mkp MB4        &mkp MB5         &kp LG(LS(S))      &trans  &kp LG(V)  &mkp_to_0 MB1    &mkp MB3     &mkp_to_0 MB2  &trans
-&trans  &trans  &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans             &trans  &kp LG(C)  &mkp MB4         &mkp MB5     &kp LC(W)      &trans
-&trans  &trans  &trans  &trans          &trans           &trans             &trans  &trans                                                  &trans
+&trans  &trans  &trans  &trans  &trans                      &kp LG(X)  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LC(T)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LG(V)  &mkp_to_0 MB1    &mkp MB3     &mkp_to_0 MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LG(C)  &mkp MB4         &mkp MB5     &kp LC(W)      &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
