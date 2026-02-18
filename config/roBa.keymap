@@ -87,7 +87,7 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                   &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))             &kp TAB                 &kp H        &kp J  &kp K      &kp L    &lt_to_layer_0 5 SINGLE_QUOTE
-&kp Z      &kp X         &kp C         &kp V                   &kp B        &kp ESC                   &lt_to_layer_0 6 MINUS  &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
+&kp Z      &kp X         &kp C         &kp V                   &kp B        &kp ESC                   &lt_to_layer_0 6 MINUS  &kp N        &kp M  &kp COMMA  &kp DOT  &lt_to_layer_0 4 SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 3 LANG1  &lt 1 SPACE  &mt LEFT_SHIFT LANG2      &kp BACKSPACE           &lt 2 ENTER                             &kp DEL
             >;
 
@@ -96,8 +96,8 @@
 
         NUM {
             bindings = <
-&kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                       &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
-&kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp KP_NUMLOCK      &trans          &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
+&kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                       &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
+&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp KP_NUMLOCK      &trans          &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
 &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &kp UNDERSCORE      &kp KP_NUMLOCK  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL
 &trans           &trans           &trans           &trans           &trans     &trans              &trans          &trans                                                              &kp UNDERSCORE
             >;
@@ -107,10 +107,10 @@
 
         SYMBOL {
             bindings = <
-&kp SLASH  &kp AMPERSAND    &kp ASTERISK  &kp QUESTION  &kp PLUS                                   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN   &kp BACKSLASH
-&kp TILDE  &kp DOLLAR       &kp PERCENT   &kp CARET     &kp MINUS  &trans              &kp COMMA   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp SINGLE_QUOTE   &kp PIPE
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp EQUAL  &kp UNDERSCORE      &kp PERIOD  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES  &kp QUESTION
-&kp LCTRL  &kp LEFT_GUI     &kp LEFT_ALT  &trans        &trans     &trans              &trans      &trans                                                                         &kp EXCLAMATION
+&kp SLASH  &kp AMPERSAND    &kp ASTERISK  &kp QUESTION  &kp PLUS                                   &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN
+&kp TILDE  &kp DOLLAR       &kp PERCENT   &kp CARET     &kp MINUS  &trans              &kp COMMA   &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp EQUAL  &kp UNDERSCORE      &kp PERIOD  &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES
+&kp LCTRL  &kp LEFT_GUI     &kp LEFT_ALT  &trans        &trans     &trans              &trans      &trans                                                                     &trans
             >;
         };
 
