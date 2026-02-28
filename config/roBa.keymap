@@ -94,17 +94,6 @@
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
-        NUM {
-            bindings = <
-&kp COMMA        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                       &kp SLASH        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
-&kp PERIOD       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS  &kp KP_NUMLOCK      &trans          &kp ASTERISK     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL  &kp UNDERSCORE      &kp KP_NUMLOCK  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL
-&trans           &trans           &trans           &trans           &trans     &trans              &trans          &trans                                                              &kp UNDERSCORE
-            >;
-
-            sensor-bindings = <&encoder_msc_down_up>;
-        };
-
         SYMBOL {
             bindings = <
 &kp SLASH  &kp AMPERSAND    &kp ASTERISK  &kp QUESTION  &kp PLUS                                   &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN
@@ -112,6 +101,17 @@
 &kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp EQUAL  &kp UNDERSCORE      &kp PERIOD  &kp PIPE       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES
 &kp LCTRL  &kp LEFT_GUI     &kp LEFT_ALT  &trans        &trans     &trans              &trans      &trans                                                                     &trans
             >;
+        };
+
+        NUM {
+            bindings = <
+&kp COMMA     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                       &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_ALT
+&kp PERIOD    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS  &kp KP_NUMLOCK      &trans          &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_GUI
+&kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL  &kp UNDERSCORE      &kp KP_NUMLOCK  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_SHIFT
+&trans        &trans        &trans        &trans        &trans     &trans              &trans          &trans                                                  &kp LCTRL
+            >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
